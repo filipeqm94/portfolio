@@ -1,11 +1,23 @@
 .header-container {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 100;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+  padding: 2rem;
 
   height: 2rem;
+
+  background-color: #333;
 
   h1 {
     position: relative;
