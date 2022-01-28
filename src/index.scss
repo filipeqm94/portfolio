@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   background-color: #333;
   color: #eee;
 }
 
-section {
+article {
   position: relative;
 
   z-index: 5;
