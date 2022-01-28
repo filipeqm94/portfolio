@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Particles from 'react-tsparticles'
+import AboutMe from './components/AboutMe'
 
 import CallToAction from './components/CallToAction'
 import Header from './components/Header'
@@ -75,6 +76,7 @@ function App() {
       </header>
       <main>
         <CallToAction />
+        <AboutMe />
       </main>
     </div>
   )
