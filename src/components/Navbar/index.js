@@ -22,13 +22,10 @@ function Navbar() {
             <a href='#about-me'>ABOUT ME</a>
           </li>
           <li>
-            <a href='#skills'>SKILLS</a>
-          </li>
-          <li>
             <a href='#projects'>PROJECTS</a>
           </li>
           <li>
-            <a href='#contact-me'>CONTACT</a>
+            <a href='mailto: marques.fq@gmail.com'>CONTACT</a>
           </li>
         </ul>
         <div className='break'></div>

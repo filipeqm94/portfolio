@@ -14,7 +14,7 @@ function CallToAction() {
           </code>
         </div>
         <a
-          href='#contact-me'
+          href='mailto: marques.fq@gmail.com'
           className='cta-contact w-36 font-bold text-center'
         >
           CONTACT ME
