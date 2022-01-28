@@ -50,7 +50,7 @@ const particles = {
       density: {
         enable: true
       },
-      value: 25
+      value: 50
     },
     opacity: {
       value: 0.5
