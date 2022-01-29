@@ -1,10 +1,11 @@
 import React from 'react'
 
 import Particles from 'react-tsparticles'
-import AboutMe from './components/AboutMe'
 
-import CallToAction from './components/CallToAction'
 import Header from './components/Header'
+import CallToAction from './components/CallToAction'
+import AboutMe from './components/AboutMe'
+import Projects from './components/Projects'
 
 const particles = {
   fpsLimit: 60,
@@ -77,6 +78,7 @@ function App() {
       <main>
         <CallToAction />
         <AboutMe />
+        <Projects />
       </main>
     </div>
   )

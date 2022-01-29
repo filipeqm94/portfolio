@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <section id='about-me' className='pt-24'>
       <article>
-        <h2 className='text-[#E6B029] text-xl'>
+        <h2 className='text-[#E6B029] text-xl ml-5 mb-2'>
           <code>About Me</code>
         </h2>
         <div className='elevator-pitch'>
