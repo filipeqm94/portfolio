@@ -6,6 +6,7 @@ import Header from './components/Header'
 import CallToAction from './components/CallToAction'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 const particles = {
   fpsLimit: 60,
@@ -15,30 +16,30 @@ const particles = {
         distance: 100,
         duration: 2,
         opacity: 0.8,
-        size: 40
+        size: 40,
       },
       push: {
-        quantity: 4
+        quantity: 4,
       },
       repulse: {
         distance: 200,
-        duration: 0.4
-      }
-    }
+        duration: 0.4,
+      },
+    },
   },
   particles: {
     color: {
-      value: '#ffffff'
+      value: '#ffffff',
     },
     links: {
       color: '#ffffff',
       distance: 100,
       enable: true,
       opacity: 0.5,
-      width: 1
+      width: 1,
     },
     collisions: {
-      enable: true
+      enable: true,
     },
     move: {
       direction: 'none',
@@ -46,40 +47,44 @@ const particles = {
       outMode: 'bounce',
       random: false,
       speed: 1,
-      straight: false
+      straight: false,
     },
     number: {
       density: {
-        enable: true
+        enable: true,
       },
-      value: 50
+      value: 50,
     },
     opacity: {
-      value: 0.5
+      value: 0.5,
     },
     shape: {
-      type: 'circle'
+      type: 'circle',
     },
     size: {
       random: true,
-      value: 3
-    }
+      value: 3,
+    },
   },
-  detectRetina: true
+  detectRetina: true,
 }
 
 function App() {
   return (
-    <div className='container mx-auto px-2'>
+    <div>
       <Particles options={particles} />
-      <header>
-        <Header />
-      </header>
-      <main>
-        <CallToAction />
-        <AboutMe />
-        <Projects />
-      </main>
+      <div className='container mx-auto px-2'>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <CallToAction />
+          <AboutMe />
+          <Projects />
+          <div className='pt-24'></div>
+        </main>
+      </div>
+        <Footer />
     </div>
   )
 }

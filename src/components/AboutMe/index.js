@@ -2,6 +2,8 @@ import React from 'react'
 
 import './styles.scss'
 
+import resume from '../../assets/Filipe Marques Resume.pdf'
+
 function AboutMe() {
   return (
     <section id='about-me' className='pt-24'>
@@ -28,10 +30,7 @@ function AboutMe() {
             that can foster my growth in the tech space.
           </p>
         </div>
-        <a
-          href='mailto: marques.fq@gmail.com'
-          className='text-[#E6B029] resume'
-        >
+        <a href={resume} target=' _blank' className='text-[#E6B029] resume'>
           RESUME
         </a>
       </article>

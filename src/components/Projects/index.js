@@ -1,59 +1,55 @@
 import React from 'react'
 
-// import languageExchange from "../../images/languageExchange.png"
-import blogWebsite from "../../images/blogWebsite.png"
-import recipeFinder from "../../images/recipeFinder.png"
-
 const projects = [
   {
     title: 'Language Exchange App',
-    image: '',
     description:
-      'A real time chat app for users to connect to each other and learn new languages through conversation.',
+      'A real time chat app for users to connect to each other and learn new languages through conversation. Made using React and Django',
     technologies: ['react', 'django', 'javascript', 'python'],
     liveProject: 'https://project-4-react.herokuapp.com/',
-    sourceCode: '',
+    sourceCode: 'https://github.com/filipeqm94/client-project-4',
   },
   {
     title: 'Blog Website',
-    image: blogWebsite,
     description:
-      'A website where users can post their own or read articles posted by other users',
+      'A website where users can post their own or read articles posted by other users. Made using MongoDB, Express, React and Node.',
     technologies: ['mongoose', 'express', 'react', 'node', 'javascript'],
-    liveProject: '',
-    sourceCode: '',
+    liveProject: 'https://tr-blog-website.herokuapp.com/',
+    sourceCode: 'https://github.com/filipeqm94/Blog-Website',
   },
   {
     title: 'Recipe Finder',
-    image: recipeFinder,
     description:
-      'A website that displays recipes based on query parameters entered by the user.',
+      'A website that displays recipes based on query parameters entered by the user. Made using React.',
     technologies: ['javascript', 'react'],
     liveProject: 'https://fm-recipe-finder.herokuapp.com/',
-    sourceCode: '',
+    sourceCode: 'https://github.com/filipeqm94/Recipe-Search',
   },
 ]
 
 function Projects() {
+  const aTagClasses = "p-2 border-2 border-yellow-400 rounded text-yellow-400 hover:bg-yellow-400 hover:text-[#333]"
+
   return (
     <section id='projects' className='pt-24'>
       <article>
         <h2 className='text-[#E6B029] text-xl ml-5 mb-2'>
           <code>Projects</code>
         </h2>
-        <div>
+        <div className='flex flex-wrap justify-center align-center'>
           {projects.map(project => {
             return (
-              <div>
-                <img src={project.image} alt={project.title} />
-                <h3>{project.title}</h3>
+              <div className='bg-zinc-800 mx-3 w-64 h-64 flex flex-col p-2 m-5 rounded'>
+                <h3 className='mb-3'>{project.title}</h3>
                 <p>{project.description}</p>
-                <a href={project.liveProject} target=' _blank'>
-                  Live Project
-                </a>
-                <a href={project.sourceCode} target=' _blank'>
-                  Source Code
-                </a>
+                <div className='mt-auto mb-2 flex justify-around'>
+                  <a href={project.liveProject} target=' _blank' className={aTagClasses}>
+                    Live Project
+                  </a>
+                  <a href={project.sourceCode} target=' _blank' className={aTagClasses}>
+                    Source Code
+                  </a>
+                </div>
               </div>
             )
           })}
