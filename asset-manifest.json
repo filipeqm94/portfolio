@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.56fefce0.css",
-    "main.js": "/static/js/main.146b571c.js",
+    "main.css": "/static/css/main.85921b88.css",
+    "main.js": "/static/js/main.ad7b5e17.js",
     "static/media/ctaImage.png": "/static/media/ctaImage.ce392a8eb9467b58d0cf.png",
     "static/media/Filipe Marques Resume.pdf": "/static/media/Filipe Marques Resume.59235c4b43def67bf805.pdf",
     "index.html": "/index.html",
-    "main.56fefce0.css.map": "/static/css/main.56fefce0.css.map",
-    "main.146b571c.js.map": "/static/js/main.146b571c.js.map"
+    "main.85921b88.css.map": "/static/css/main.85921b88.css.map",
+    "main.ad7b5e17.js.map": "/static/js/main.ad7b5e17.js.map"
   },
   "entrypoints": [
-    "static/css/main.56fefce0.css",
-    "static/js/main.146b571c.js"
+    "static/css/main.85921b88.css",
+    "static/js/main.ad7b5e17.js"
   ]
 }
