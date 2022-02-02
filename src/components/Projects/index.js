@@ -10,7 +10,10 @@ import {
   SiPython,
   SiDjango,
 } from 'react-icons/si'
+
 import Project from './Project'
+
+import './styles.scss'
 
 const projects = [
   {
@@ -113,15 +116,17 @@ function Projects() {
 
   return (
     <section id='projects' className='pt-24'>
-      <article>
+      <article className='projects-article'>
         <h2 className='text-[#E6B029] text-xl ml-5 mb-2'>
           <code>Projects</code>
         </h2>
         <div>
-          <div className='flex align-center justify-center'>
+          <div
+            className='flex align-center justify-center flex-wrap'
+          >
             {technologies.map(tech => (
               <div
-                className={`mx-3 text-4xl cursor-pointer ${
+                className={`m-3 text-4xl cursor-pointer ${
                   tech.active ? 'text-[#E6B029]' : 'hover:text-yellow-300'
                 }`}
                 onClick={() => handleSearch(tech)}
@@ -132,7 +137,7 @@ function Projects() {
             ))}
           </div>
         </div>
-        <div className='flex flex-wrap justify-center align-center'>
+        <div className='flex flex-wrap justify-center align-center projects-container'>
           {projects
             .filter(project => {
               if (filter) {

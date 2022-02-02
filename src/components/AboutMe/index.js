@@ -7,7 +7,7 @@ import resume from '../../assets/Filipe Marques Resume.pdf'
 function AboutMe() {
   return (
     <section id='about-me' className='pt-24'>
-      <article>
+      <article className='about-me'>
         <h2 className='text-[#E6B029] text-xl ml-5 mb-2'>
           <code>About Me</code>
         </h2>

@@ -72,8 +72,8 @@ const particles = {
 function App() {
   return (
     <div>
-      <Particles options={particles} className='z-0'/>
-      <div className='container mx-auto px-2'>
+      <Particles options={particles}/>
+      <div className='container mx-auto p-3'>
         <header>
           <Header />
         </header>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './styles.scss'
+
 function Project({ project }) {
   const aTagClasses =
     'p-2 border-2 border-[#E6B029] rounded text-[#E6B029] hover:bg-[#E6B029] hover:text-[#333]'
@@ -10,8 +12,8 @@ function Project({ project }) {
       key={project.title}
     >
       <h3 className='mb-3'>{project.title}</h3>
-      <p>{project.description}</p>
-      <div className='mt-auto mb-2 flex justify-around'>
+      <p className='mb-auto'>{project.description}</p>
+      <div className='flex justify-around links'>
         <a href={project.liveProject} target=' _blank' className={aTagClasses}>
           Live Project
         </a>
