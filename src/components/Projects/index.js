@@ -1,4 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiMongodb,
+  SiExpress,
+  SiNodedotjs,
+  SiPython,
+  SiDjango,
+} from 'react-icons/si'
+import Project from './Project'
 
 const projects = [
   {
@@ -13,7 +25,7 @@ const projects = [
     title: 'Blog Website',
     description:
       'A website where users can post their own or read articles posted by other users. Made using MongoDB, Express, React and Node.',
-    technologies: ['mongoose', 'express', 'react', 'node', 'javascript'],
+    technologies: ['mongodb', 'express', 'react', 'node', 'javascript'],
     liveProject: 'https://tr-blog-website.herokuapp.com/',
     sourceCode: 'https://github.com/filipeqm94/Blog-Website',
   },
@@ -27,8 +39,77 @@ const projects = [
   },
 ]
 
+const initialTechs = [
+  {
+    icon: <SiHtml5 />,
+    name: 'html',
+    active: false,
+  },
+  {
+    icon: <SiCss3 />,
+    name: 'css',
+    active: false,
+  },
+  {
+    icon: <SiJavascript />,
+    name: 'javascript',
+    active: false,
+  },
+  {
+    icon: <SiReact />,
+    name: 'react',
+    active: false,
+  },
+  {
+    icon: <SiMongodb />,
+    name: 'mongodb',
+    active: false,
+  },
+  {
+    icon: <SiExpress />,
+    name: 'express',
+    active: false,
+  },
+  {
+    icon: <SiNodedotjs />,
+    name: 'node',
+    active: false,
+  },
+  {
+    icon: <SiPython />,
+    name: 'python',
+    active: false,
+  },
+  {
+    icon: <SiDjango />,
+    name: 'django',
+    active: false,
+  },
+]
+
 function Projects() {
-  const aTagClasses = "p-2 border-2 border-yellow-400 rounded text-yellow-400 hover:bg-yellow-400 hover:text-[#333]"
+  const [technologies, setTechnologies] = useState(initialTechs)
+  const [filter, setFilter] = useState('')
+
+  function handleSearch(tech) {
+    const index = technologies.indexOf(tech)
+    setTechnologies(prevTechs =>
+      prevTechs.map((tech, techIndex) => {
+        if (index === techIndex) {
+          if (tech.active) {
+            tech.active = false
+            setFilter('')
+          } else {
+            tech.active = true
+            setFilter(tech.name)
+          }
+        } else {
+          tech.active = false
+        }
+        return tech
+      }),
+    )
+  }
 
   return (
     <section id='projects' className='pt-24'>
@@ -36,23 +117,33 @@ function Projects() {
         <h2 className='text-[#E6B029] text-xl ml-5 mb-2'>
           <code>Projects</code>
         </h2>
-        <div className='flex flex-wrap justify-center align-center'>
-          {projects.map(project => {
-            return (
-              <div className='bg-zinc-800 mx-3 w-64 h-64 flex flex-col p-2 m-5 rounded'>
-                <h3 className='mb-3'>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className='mt-auto mb-2 flex justify-around'>
-                  <a href={project.liveProject} target=' _blank' className={aTagClasses}>
-                    Live Project
-                  </a>
-                  <a href={project.sourceCode} target=' _blank' className={aTagClasses}>
-                    Source Code
-                  </a>
-                </div>
+        <div>
+          <div className='flex align-center justify-center'>
+            {technologies.map(tech => (
+              <div
+                className={`mx-3 text-4xl cursor-pointer ${
+                  tech.active ? 'text-[#E6B029]' : 'hover:text-yellow-300'
+                }`}
+                onClick={() => handleSearch(tech)}
+                key={tech.name}
+              >
+                {tech.icon}
               </div>
-            )
-          })}
+            ))}
+          </div>
+        </div>
+        <div className='flex flex-wrap justify-center align-center'>
+          {projects
+            .filter(project => {
+              if (filter) {
+                return project.technologies.includes(filter)
+              } else {
+                return project
+              }
+            })
+            .map(project => (
+              <Project project={project} key={project.title} />
+            ))}
         </div>
       </article>
     </section>

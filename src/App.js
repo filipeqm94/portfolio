@@ -29,10 +29,10 @@ const particles = {
   },
   particles: {
     color: {
-      value: '#ffffff',
+      value: '#eee',
     },
     links: {
-      color: '#ffffff',
+      color: '#aaa',
       distance: 100,
       enable: true,
       opacity: 0.5,
@@ -72,7 +72,7 @@ const particles = {
 function App() {
   return (
     <div>
-      <Particles options={particles} />
+      <Particles options={particles} className='z-0'/>
       <div className='container mx-auto px-2'>
         <header>
           <Header />
@@ -84,7 +84,7 @@ function App() {
           <div className='pt-24'></div>
         </main>
       </div>
-        <Footer />
+      <Footer />
     </div>
   )
 }
