@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.540e5701.css",
-    "main.js": "/static/js/main.33a5c5e3.js",
+    "main.css": "/static/css/main.d8ed671e.css",
+    "main.js": "/static/js/main.770bee51.js",
+    "static/media/recipe finder.png": "/static/media/recipe finder.9bc50a8cba52667e19b2.png",
     "static/media/ctaImage.png": "/static/media/ctaImage.ce392a8eb9467b58d0cf.png",
+    "static/media/chatter.png": "/static/media/chatter.a2142ebf6732f14eb05d.png",
+    "static/media/articlr.png": "/static/media/articlr.fcc5991f5be6b1c14cc9.png",
     "static/media/Filipe Marques Resume.pdf": "/static/media/Filipe Marques Resume.067c8c792e63ce6ccfff.pdf",
     "index.html": "/index.html",
-    "main.540e5701.css.map": "/static/css/main.540e5701.css.map",
-    "main.33a5c5e3.js.map": "/static/js/main.33a5c5e3.js.map"
+    "main.d8ed671e.css.map": "/static/css/main.d8ed671e.css.map",
+    "main.770bee51.js.map": "/static/js/main.770bee51.js.map"
   },
   "entrypoints": [
-    "static/css/main.540e5701.css",
-    "static/js/main.33a5c5e3.js"
+    "static/css/main.d8ed671e.css",
+    "static/js/main.770bee51.js"
   ]
 }
