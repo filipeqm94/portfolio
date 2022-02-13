@@ -14,10 +14,14 @@ import {
 import Project from './Project'
 
 import './styles.scss'
+import articlrImg from './images/articlr.png'
+import chatterImg from './images/chatter.png'
+import recipeFinderImg from './images/recipe finder.png'
 
 const projects = [
   {
-    title: 'Language Exchange App',
+    title: 'Chatter',
+    image: chatterImg,
     description:
       'A real time chat app for users to connect to each other and learn new languages through conversation. Made using React and Django',
     technologies: ['react', 'django', 'javascript', 'python'],
@@ -25,7 +29,8 @@ const projects = [
     sourceCode: 'https://github.com/filipeqm94/client-project-4',
   },
   {
-    title: 'Blog Website',
+    title: 'articlr',
+    image: articlrImg,
     description:
       'A website where users can post their own or read articles posted by other users. Made using MongoDB, Express, React and Node.',
     technologies: ['mongodb', 'express', 'react', 'node', 'javascript'],
@@ -34,6 +39,7 @@ const projects = [
   },
   {
     title: 'Recipe Finder',
+    image: recipeFinderImg,
     description:
       'A website that displays recipes based on query parameters entered by the user. Made using React.',
     technologies: ['javascript', 'react'],

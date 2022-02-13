@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './styles.scss'
-import ctaImage from '../../images/ctaImage.png'
+import ctaImage from './images/ctaImage.png'
 
 function CallToAction() {
   return (
