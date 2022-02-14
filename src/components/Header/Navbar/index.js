@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 import './styles.scss'
 
-function Navbar() {
+function Navbar({ navigate }) {
   const [showNavbar, setShowNavbar] = useState(false)
 
   return (
@@ -18,25 +18,33 @@ function Navbar() {
       </div>
       <div className={`flex items-center navbar ${showNavbar ? 'show' : ''}`}>
         <ul className='flex links'>
-          <li>
-            <a href='#about-me'>ABOUT ME</a>
+          <li className='cursor-pointer' onClick={e => navigate(e, 'about-me')}>
+            ABOUT ME
           </li>
-          <li>
-            <a href='#projects'>PROJECTS</a>
+          <li className='cursor-pointer' onClick={e => navigate(e, 'projects')}>
+            PROJECTS
           </li>
-          <li>
-            <a href='mailto: marques.fq@gmail.com'>CONTACT</a>
+          <li className='cursor-pointer' onClick={e => navigate(e, 'contact')}>
+            CONTACT
           </li>
         </ul>
         <div className='break'></div>
         <ul className='flex items-center social text-2xl'>
           <li>
-            <a href='https://www.linkedin.com/in/marques-fq/' target=' _blank'>
+            <a
+              href='https://www.linkedin.com/in/marques-fq/'
+              target=' _blank'
+              rel='noreferrer'
+            >
               <AiFillLinkedin />
             </a>
           </li>
           <li>
-            <a href='https://github.com/filipeqm94' target=' _blank'>
+            <a
+              href='https://github.com/filipeqm94'
+              target=' _blank'
+              rel='noreferrer'
+            >
               <AiFillGithub />
             </a>
           </li>

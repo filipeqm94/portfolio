@@ -4,15 +4,17 @@ import Navbar from '../Navbar'
 
 import './styles.scss'
 
-function Header() {
+function Header({ navigate }) {
   return (
-    <div className='header-container'>
-      <a href='/'>
-        <h1 className='text-3xl font-bold logo'>
-          FM<span className='text-[#E6B029]'>.</span>
-        </h1>
-      </a>
-      <Navbar />
+    <div className='header-container py-8 px-3 md:px-20'>
+      <h1
+        className='text-3xl font-bold logo cursor-pointer'
+        onClick={e => navigate(e, 'top')}
+      >
+        FM<span className='text-[#E6B029]'>.</span>
+      </h1>
+
+      <Navbar navigate={navigate} />
     </div>
   )
 }
