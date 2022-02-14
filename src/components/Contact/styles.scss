@@ -1,0 +1,16 @@
+#contact {
+  label {
+    &:focus-within {
+      color: #e6b029;
+    }
+
+    input,
+    textarea {
+      color: #eee !important;
+
+      &::placeholder {
+        color: #bbb;
+      }
+    }
+  }
+}
