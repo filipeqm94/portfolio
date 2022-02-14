@@ -3,9 +3,9 @@ import React from 'react'
 import './styles.scss'
 import ctaImage from './images/ctaImage.png'
 
-function CallToAction() {
+function CallToAction({ navigate }) {
   return (
-    <section className='cta mt-24'>
+    <section id='top' className='cta pt-24'>
       <div className='grid content-between h-100 cta-info'>
         <div>
           <h1 className='text-2xl font-bold cta-name mb-5'>Filipe Marques</h1>
@@ -13,12 +13,12 @@ function CallToAction() {
             &lt;Software Engineer /&gt;
           </code>
         </div>
-        <a
-          href='mailto: marques.fq@gmail.com'
+        <button
+          onClick={e => navigate(e, 'contact')}
           className='cta-contact w-36 font-bold text-center'
         >
           CONTACT ME
-        </a>
+        </button>
       </div>
       <div className='cta-image'>
         <img src={ctaImage} alt='Filipe Marques' />
