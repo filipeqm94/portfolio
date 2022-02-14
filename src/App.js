@@ -7,6 +7,7 @@ import CallToAction from './components/CallToAction'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 const particles = {
   fpsLimit: 60,
@@ -70,17 +71,24 @@ const particles = {
 }
 
 function App() {
+  function navigate(e, id) {
+    e && e.preventDefault()
+    const elementToView = document.getElementById(id)
+    elementToView.scrollIntoView()
+  }
+
   return (
     <div>
-      <Particles options={particles}/>
-      <div className='container mx-auto p-3'>
+      <Particles options={particles} />
+      <div className='container mx-auto py-4 lg:px-32 xl:px-48'>
         <header>
-          <Header />
+          <Header navigate={navigate} />
         </header>
         <main>
-          <CallToAction />
+          <CallToAction navigate={navigate} />
           <AboutMe />
           <Projects />
+          <Contact />
           <div className='pt-24'></div>
         </main>
       </div>
