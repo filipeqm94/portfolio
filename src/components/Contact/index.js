@@ -70,7 +70,7 @@ function Contact() {
                 required
                 value={toSend.from_name}
                 onChange={handleChange}
-                className='block w-full md:w-48 lg:w-64 xl:w-72 px-2 py-1 rounded bg-[#888] mt-2'
+                className='block w-full md:w-72 lg:w-56 xl:w-72 px-2 py-1 rounded bg-[#888] mt-2'
               />
             </label>
             <label className='block my-3 my-3'>
@@ -82,7 +82,7 @@ function Contact() {
                 required
                 value={toSend.reply_to}
                 onChange={handleChange}
-                className='block w-full md:w-48 lg:w-64 xl:w-72 px-2 py-1 rounded bg-[#888] mt-2'
+                className='block w-full md:w-72 lg:w-56 xl:w-72 px-2 py-1 rounded bg-[#888] mt-2'
               />
             </label>
           </div>
@@ -99,7 +99,7 @@ function Contact() {
           </label>
           <button
             type='submit'
-            className='p-2 border-2 border-[#E6B029] rounded text-[#E6B029] hover:bg-[#E6B029] hover:text-[#333]'
+            className='block mx-auto p-2 border-2 border-[#E6B029] rounded text-[#E6B029] hover:bg-[#E6B029] hover:text-[#333]'
           >
             Submit
           </button>
