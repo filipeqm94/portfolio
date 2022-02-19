@@ -46,6 +46,60 @@ const projects = [
     liveProject: 'https://fm-recipe-finder.herokuapp.com/',
     sourceCode: 'https://github.com/filipeqm94/Recipe-Search',
   },
+  // {
+  //   title: 'Crossword Puzzle',
+  //   image: '',
+  //   description:
+  //     'A website for users to play the Crossword Puzzle game. Make with VanillaJS, HTML and SASS',
+  //   technologies: ['html', 'css', 'javascript'],
+  //   liveProject: 'https://filipeqm94.github.io/Crossword-Puzzle/',
+  //   sourceCode: 'https://github.com/filipeqm94/Crossword-Puzzle',
+  // },
+  // {
+  //   title: 'Survey Form',
+  //   image: '',
+  //   description:
+  //     'A form website created to display mastery on HTML form creation. Styled with Bootstrap.',
+  //   technologies: ['html', 'css'],
+  //   liveProject: 'https://filipeqm94.github.io/avenger-experience-form/',
+  //   sourceCode: 'https://github.com/filipeqm94/avenger-experience-form',
+  // },
+  // {
+  //   title: 'Product Landing Page',
+  //   image: '',
+  //   description:
+  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
+  //   technologies: ['html', 'css'],
+  //   liveProject: 'https://filipeqm94.github.io/product-landing-page/',
+  //   sourceCode: 'https://github.com/filipeqm94/product-landing-page',
+  // },
+  // {
+  //   title: 'Tribute Page',
+  //   image: '',
+  //   description:
+  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
+  //   technologies: ['html', 'css'],
+  //   liveProject: 'https://filipeqm94.github.io/chester-tribute-page/',
+  //   sourceCode: 'https://github.com/filipeqm94/chester-tribute-page',
+  // },
+  // {
+  //   title: 'Documentation Page',
+  //   image: '',
+  //   description:
+  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
+  //   technologies: ['html', 'css', 'javascript'],
+  //   liveProject: 'https://filipeqm94.github.io/tech-doc-page/',
+  //   sourceCode: 'https://github.com/filipeqm94/tech-doc-page',
+  // },
+  // {
+  //   title: 'Markdown Previewer',
+  //   image: '',
+  //   description:
+  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
+  //   technologies: ['html', 'css', 'javascript', 'react'],
+  //   liveProject: 'https://filipeqm94.github.io/markdown-previewer/',
+  //   sourceCode: 'https://github.com/filipeqm94/markdown-previewer',
+  // },
 ]
 
 const initialTechs = [
@@ -127,9 +181,7 @@ function Projects() {
           <code>Projects</code>
         </h2>
         <div>
-          <div
-            className='flex align-center justify-center flex-wrap'
-          >
+          <div className='flex align-center justify-center flex-wrap'>
             {technologies.map(tech => (
               <div
                 className={`m-3 text-4xl cursor-pointer ${
