@@ -46,60 +46,54 @@ const projects = [
     liveProject: 'https://fm-recipe-finder.herokuapp.com/',
     sourceCode: 'https://github.com/filipeqm94/Recipe-Search',
   },
-  // {
-  //   title: 'Crossword Puzzle',
-  //   image: '',
-  //   description:
-  //     'A website for users to play the Crossword Puzzle game. Make with VanillaJS, HTML and SASS',
-  //   technologies: ['html', 'css', 'javascript'],
-  //   liveProject: 'https://filipeqm94.github.io/Crossword-Puzzle/',
-  //   sourceCode: 'https://github.com/filipeqm94/Crossword-Puzzle',
-  // },
-  // {
-  //   title: 'Survey Form',
-  //   image: '',
-  //   description:
-  //     'A form website created to display mastery on HTML form creation. Styled with Bootstrap.',
-  //   technologies: ['html', 'css'],
-  //   liveProject: 'https://filipeqm94.github.io/avenger-experience-form/',
-  //   sourceCode: 'https://github.com/filipeqm94/avenger-experience-form',
-  // },
-  // {
-  //   title: 'Product Landing Page',
-  //   image: '',
-  //   description:
-  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
-  //   technologies: ['html', 'css'],
-  //   liveProject: 'https://filipeqm94.github.io/product-landing-page/',
-  //   sourceCode: 'https://github.com/filipeqm94/product-landing-page',
-  // },
-  // {
-  //   title: 'Tribute Page',
-  //   image: '',
-  //   description:
-  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
-  //   technologies: ['html', 'css'],
-  //   liveProject: 'https://filipeqm94.github.io/chester-tribute-page/',
-  //   sourceCode: 'https://github.com/filipeqm94/chester-tribute-page',
-  // },
-  // {
-  //   title: 'Documentation Page',
-  //   image: '',
-  //   description:
-  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
-  //   technologies: ['html', 'css', 'javascript'],
-  //   liveProject: 'https://filipeqm94.github.io/tech-doc-page/',
-  //   sourceCode: 'https://github.com/filipeqm94/tech-doc-page',
-  // },
-  // {
-  //   title: 'Markdown Previewer',
-  //   image: '',
-  //   description:
-  //     'A website created to display mastery on HTML form webpage creation. Styled with SASS and Bootstrap.',
-  //   technologies: ['html', 'css', 'javascript', 'react'],
-  //   liveProject: 'https://filipeqm94.github.io/markdown-previewer/',
-  //   sourceCode: 'https://github.com/filipeqm94/markdown-previewer',
-  // },
+  {
+    title: 'Crossword Puzzle',
+    description:
+      'A website for users to play the Crossword Puzzle game. Make with VanillaJS, HTML and SASS.',
+    technologies: ['html', 'css', 'javascript'],
+    liveProject: 'https://filipeqm94.github.io/Crossword-Puzzle/',
+    sourceCode: 'https://github.com/filipeqm94/Crossword-Puzzle',
+  },
+  {
+    title: 'Markdown Previewer',
+    description:
+      'An app designed to show compiled markdown language. Created using React and SASS.',
+    technologies: ['html', 'css', 'javascript', 'react'],
+    liveProject: 'https://filipeqm94.github.io/markdown-previewer/',
+    sourceCode: 'https://github.com/filipeqm94/markdown-previewer',
+  },
+  {
+    title: 'Documentation Page',
+    description:
+      'A JavaScript documentation website, mobile compatible with a custom made hambumger menu. Created with Vanilla JS, HTML and SASS.',
+    technologies: ['html', 'css', 'javascript'],
+    liveProject: 'https://filipeqm94.github.io/tech-doc-page/',
+    sourceCode: 'https://github.com/filipeqm94/tech-doc-page',
+  },
+  {
+    title: 'Survey Form',
+    description:
+      'A form website created to display mastery on HTML form creation. Styled with Bootstrap.',
+    technologies: ['html', 'css'],
+    liveProject: 'https://filipeqm94.github.io/avenger-experience-form/',
+    sourceCode: 'https://github.com/filipeqm94/avenger-experience-form',
+  },
+  {
+    title: 'Product Landing Page',
+    description:
+      'A website created to display mastery on HTML webpage creation. Styled with SASS and Bootstrap.',
+    technologies: ['html', 'css'],
+    liveProject: 'https://filipeqm94.github.io/product-landing-page/',
+    sourceCode: 'https://github.com/filipeqm94/product-landing-page',
+  },
+  {
+    title: 'Tribute Page',
+    description:
+      'A website created to display mastery on HTML webpage creation. Created with HTML and CSS.',
+    technologies: ['html', 'css'],
+    liveProject: 'https://filipeqm94.github.io/chester-tribute-page/',
+    sourceCode: 'https://github.com/filipeqm94/chester-tribute-page',
+  },
 ]
 
 const initialTechs = [

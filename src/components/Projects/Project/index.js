@@ -11,16 +11,19 @@ function Project({ project }) {
       className='bg-zinc-800 mx-3 p-6 w-72 card-height flex flex-col p-2 m-5 rounded hover:scale-105 transition-transform'
       key={project.title}
     >
-      <img
-        src={project.image}
-        alt={project.tile}
-        className='h-44 w-full rounded z-1'
-      />
+      {project.image ? (
+        <img
+          src={project.image}
+          alt={project.tile}
+          className='h-44 w-full rounded z-1'
+        />
+      ) : null}
+
       <h3 className='mb-3 font-bold text-[#E6B029]'>
         {project.title.toUpperCase()}
       </h3>
       <p className='mb-auto'>{project.description}</p>
-      <div className='flex justify-around links'>
+      <div className='flex justify-around links pt-4'>
         <a href={project.liveProject} target=' _blank' className={aTagClasses}>
           Live Project
         </a>
