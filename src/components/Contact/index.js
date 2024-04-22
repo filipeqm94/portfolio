@@ -61,8 +61,7 @@ function Contact() {
           <span className='text-yellow-300'>
             Interested in working together?
           </span>{' '}
-          I'm currently located in Boston, MA and open to both relocation and
-          remote work. Leave a message with details so we can discuss.
+          I'm currently located in Massachusetts and open to relocation for the right opportunity. Leave a message with details so we can discuss.
         </p>
         <p className='text-center mb-2 text-xl w-full lg:w-2/3 lg:mx-auto'>
           <span className='text-yellow-300'>Have something else in mind?</span>{' '}
@@ -78,11 +77,10 @@ function Contact() {
           className='bg-zinc-800 px-2 md:px-4 py-3 rounded w-full lg:w-2/3 mx-auto relative'
         >
           <div
-            className={`${
-              requestSent
-                ? 'absolute w-full h-full top-0 left-0 flex flex-col bg-[#99999975]'
-                : 'hidden'
-            }`}
+            className={`${requestSent
+              ? 'absolute w-full h-full top-0 left-0 flex flex-col bg-[#99999975]'
+              : 'hidden'
+              }`}
           >
             {loading ? (
               <div className='m-auto'>
